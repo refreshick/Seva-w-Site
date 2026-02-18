@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыка | Seva'w'Coffee</title>
+    <meta name="description" content="Оригинальные музыкальные композиции и альбомы в стиле electronic и ambient. Слушайте на Spotify, YouTube и Яндекс Музыке.">
+    <meta name="keywords" content="музыка, electronic, ambient, композиции, альбомы">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Музыка | Sevaw">
+    <meta property="og:description" content="Оригинальные музыкальные композиции и альбомы">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sevaw.com/music">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Музыка | Sevaw">
+    <meta name="twitter:description" content="Оригинальные музыкальные композиции и альбомы">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title fade-in">Музыка</h1>
+                <p class="page-subtitle fade-in">Оригинальные композиции и альбомы</p>
+            </div>
+        </section>
+
+        <!-- Albums Grid -->
+        <section class="projects-section">
+            <div class="container">
+                <div id="music-container" class="projects-grid">
+                    <!-- Будет загружено динамически -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProjects('music-container', 'music.json', musicCardTemplate);
+        });
+    </script>
+</body>
+</html>

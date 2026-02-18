@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "slug": "album-1",
+    "title": "Первый альбом",
+    "year": 2024,
+    "description": "Описание первого альбома. Это первый полноценный музыкальный проект, состоящий из 10 оригинальных треков в стиле electronic/ambient.",
+    "image": "images/music/album1.jpg",
+    "tracks": [
+      "Трек 1",
+      "Трек 2",
+      "Трек 3",
+      "Трек 4",
+      "Трек 5",
+      "Трек 6",
+      "Трек 7",
+      "Трек 8",
+      "Трек 9",
+      "Трек 10"
+    ],
+    "platforms": [
+      {
+        "name": "Spotify",
+        "url": "https://spotify.com"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://youtube.com"
+      },
+      {
+        "name": "Яндекс Музыка",
+        "url": "https://music.yandex.ru"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "album-2",
+    "title": "Второй альбом",
+    "year": 2025,
+    "description": "Второй альбом представляет развитие музыкального стиля с новыми экспериментами в области синтеза звука и аранжировки.",
+    "image": "images/music/album2.jpg",
+    "tracks": [
+      "Новый трек 1",
+      "Новый трек 2",
+      "Новый трек 3",
+      "Новый трек 4",
+      "Новый трек 5"
+    ],
+    "platforms": [
+      {
+        "name": "Spotify",
+        "url": "https://spotify.com"
+      },
+      {
+        "name": "YouTube",
+        "url": "https://youtube.com"
+      },
+      {
+        "name": "Яндекс Музыка",
+        "url": "https://music.yandex.ru"
+      }
+    ]
+  }
+]

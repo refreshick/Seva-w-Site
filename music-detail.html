@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали трека | Seva'w'Coffee</title>
+    <meta name="description" content="Детали музыкального релиза">
+    <meta name="keywords" content="музыка, альбом, сингл, треки">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Release Details -->
+        <section class="release-detail">
+            <div class="container">
+                <div class="release-header fade-in">
+                    <div class="release-cover">
+                        <img id="releaseImage" src="" alt="Обложка" loading="lazy" width="300" height="300" decoding="async">
+                    </div>
+                    <div class="release-info">
+                        <p id="releaseType" class="release-type"></p>
+                        <h1 id="releaseTitle" class="release-title fade-in"></h1>
+                        <p id="releaseYear" class="release-year fade-in"></p>
+                        <p id="releaseDescription" class="release-description fade-in"></p>
+                        
+                        <div class="release-platforms fade-in">
+                            <h3>Слушать на</h3>
+                            <div id="platformsList" class="platforms-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tracklist -->
+                <section class="tracklist-section">
+                    <h2>Треклист</h2>
+                    <div id="tracksList" class="tracks-list"></div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Back Button -->
+        <section class="section-footer">
+            <div class="container">
+                <a href="music.html" class="cta-button">← Вернуться к музыке</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadReleaseDetail();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арты | Seva'w'Coffee</title>
+    <meta name="description" content="Галерея визуального творчества и иллюстраций. Интерактивный просмотр с полноэкранным режимом.">
+    <meta name="keywords" content="арты, иллюстрации, галерея, визуальное творчество">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Арты | Sevaw">
+    <meta property="og:description" content="Галерея визуального творчества и иллюстраций">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sevaw.com/art">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Арты | Sevaw">
+    <meta name="twitter:description" content="Галерея визуального творчества и иллюстраций">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title fade-in">Арты</h1>
+                <p class="page-subtitle fade-in">Визуальное творчество и иллюстрации</p>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Art Pieces -->
+                    <div class="gallery-item fade-in" onclick="openLightbox(1)">
+                        <div class="gallery-image">
+                            <span>Арт 1</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openLightbox(2)">
+                        <div class="gallery-image">
+                            <span>Арт 2</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openLightbox(3)">
+                        <div class="gallery-image">
+                            <span>Арт 3</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openLightbox(4)">
+                        <div class="gallery-image">
+                            <span>Арт 4</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openLightbox(5)">
+                        <div class="gallery-image">
+                            <span>Арт 5</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item fade-in" onclick="openLightbox(6)">
+                        <div class="gallery-image">
+                            <span>Арт 6</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <!-- Previous Button -->
+            <button class="lightbox-btn prev-btn" onclick="previousImage()" aria-label="Предыдущее изображение">←</button>
+            
+            <!-- Image -->
+            <div class="lightbox-image">
+                <span id="currentImage">Арт 1</span>
+            </div>
+            
+            <!-- Next Button -->
+            <button class="lightbox-btn next-btn" onclick="nextImage()" aria-label="Следующее изображение">→</button>
+            
+            <!-- Close Button -->
+            <button class="lightbox-close" onclick="closeLightbox()" aria-label="Закрыть">&times;</button>
+        </div>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

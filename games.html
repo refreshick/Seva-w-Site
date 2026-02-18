@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игры | Sevaw</title>
+    <meta name="description" content="Коллекция экспериментальных игровых проектов. Исследуйте авторские игры на различных движках.">
+    <meta name="keywords" content="игры, инди-игры, разработка, Godot, Unity">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Игры | Sevaw">
+    <meta property="og:description" content="Коллекция экспериментальных игровых проектов">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sevaw.com/games">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Игры | Sevaw">
+    <meta name="twitter:description" content="Коллекция экспериментальных игровых проектов">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title fade-in">Игры</h1>
+                <p class="page-subtitle fade-in">Коллекция экспериментальных игровых проектов</p>
+            </div>
+        </section>
+
+        <!-- Games Grid -->
+        <section class="projects-section">
+            <div class="container">
+                <div id="games-container" class="projects-grid">
+                    <!-- Будет загружено динамически -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProjects('games-container', 'games.json', gameCardTemplate);
+        });
+    </script>
+</body>
+</html>
