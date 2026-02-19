@@ -1,65 +1,83 @@
 [
-  {
-    "id": 1,
-    "slug": "album-1",
-    "title": "Первый альбом",
-    "year": 2024,
-    "description": "Описание первого альбома. Это первый полноценный музыкальный проект, состоящий из 10 оригинальных треков в стиле electronic/ambient.",
-    "image": "images/music/album1.jpg",
-    "tracks": [
-      "Трек 1",
-      "Трек 2",
-      "Трек 3",
-      "Трек 4",
-      "Трек 5",
-      "Трек 6",
-      "Трек 7",
-      "Трек 8",
-      "Трек 9",
-      "Трек 10"
-    ],
-    "platforms": [
-      {
-        "name": "Spotify",
-        "url": "https://spotify.com"
-      },
-      {
-        "name": "YouTube",
-        "url": "https://youtube.com"
-      },
-      {
-        "name": "Яндекс Музыка",
-        "url": "https://music.yandex.ru"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "slug": "album-2",
-    "title": "Второй альбом",
-    "year": 2025,
-    "description": "Второй альбом представляет развитие музыкального стиля с новыми экспериментами в области синтеза звука и аранжировки.",
-    "image": "images/music/album2.jpg",
-    "tracks": [
-      "Новый трек 1",
-      "Новый трек 2",
-      "Новый трек 3",
-      "Новый трек 4",
-      "Новый трек 5"
-    ],
-    "platforms": [
-      {
-        "name": "Spotify",
-        "url": "https://spotify.com"
-      },
-      {
-        "name": "YouTube",
-        "url": "https://youtube.com"
-      },
-      {
-        "name": "Яндекс Музыка",
-        "url": "https://music.yandex.ru"
-      }
-    ]
-  }
-]
+        {
+            "id": 1,
+            "slug": "cozy-home",
+            "title": "Cozy Home",
+            "year": 2025,
+            "type": "album",
+            "description": "Атмосферный альбом с уютными и теплыми звуками. Идеален для расслабления и спокойного времяпровождения.",
+            "image": "images/music/cozy-home.png",
+            "tracks": [ 
+            ],
+            "platforms": [
+                { "name": "Spotify", "url": "https://open.spotify.com/album/6KLBSFgDHUQf1dKM5Ejq8l?si=YvdrlTosS-mqODKEQtsjSQ" },
+                { "name": "YouTube", "url": "https://www.youtube.com/watch?v=2b-8Ct-iXzc" },
+                { "name": "Яндекс Музыка", "url": "https://music.yandex.ru/album/35895850" }
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "city-of-broken-dreams",
+            "title": "City of Broken Dreams",
+            "year": 2025,
+            "type": "album",
+            "description": "Мрачный и интенсивный альбом, исследующий темы потери и надежды в современном городе.",
+            "image": "images/music/city-of-broken-dreams.png",
+            "tracks": [
+            ],
+            "platforms": [
+                { "name": "Spotify", "url": "https://open.spotify.com/album/6yBeArhY5Qy3ARL3a4JGPO?si=8t_vlQk5TAKT6c8ZtjnYkg" },
+                { "name": "YouTube", "url": "https://www.youtube.com/watch?v=MYqz4rRwCZM" },
+                { "name": "Яндекс Музыка", "url": "https://music.yandex.ru/album/37016086" }
+            ]
+        },
+        {
+            "id": 3,
+            "slug": "ignite",
+            "title": "Ignite",
+            "year": 2025,
+            "type": "album",
+            "description": "Энергичный и вдохновляющий альбом с мощными синтезаторами и динамичными ритмами.",
+            "image": "images/music/ignite.png",
+            "tracks": [
+            ],
+            "platforms": [
+                { "name": "Spotify", "url": "https://open.spotify.com/album/4cZlbuGOKLg1ZKDGWQeNOa?si=fX36_IjtS6ydKtehWc4cZQ" },
+                { "name": "Яндекс Музыка", "url": "https://music.yandex.ru/album/39847705" }
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "i-dont-know-how-to-name-this",
+            "title": "I will never name this",
+            "year": 2025,
+            "type": "single",
+            "description": "Я все еще не знаю, как это назвать",
+            "image": "images/music/single-1.png",
+            "tracks": [
+                "I will never name this"
+            ],
+            "platforms": [
+                { "name": "Spotify", "url": "https://open.spotify.com/album/1Ed6kXAywXBnut1f95vS5b?si=PHaYDlj_SFGR8RP5_izZAg" },
+                { "name": "YouTube", "url": "https://www.youtube.com/watch?v=h2X6BY8KdSw" },
+                { "name": "Яндекс Музыка", "url": "https://music.yandex.ru/album/36179016" }
+            ]
+        },
+        {
+            "id": 5,
+            "slug": "sunsettape",
+            "title": "Sunset Tape",
+            "year": 2025,
+            "type": "single",
+            "description": "Первый и, пожалуй, лучший мой сингл",
+            "image": "images/music/single-2.png",
+            "tracks": [
+                "Sunset Tape"
+            ],
+            "platforms": [
+                { "name": "Spotify", "url": "https://open.spotify.com/album/6McPRZofOazXNN2xRB63qk?si=K4Gc3ddsSvOb3M6gUMNkIg" },
+                { "name": "YouTube", "url": "https://www.youtube.com/watch?v=-kHDFddXGW0" },
+                { "name": "Яндекс Музыка", "url": "https://music.yandex.ru/album/36156758" }
+            ]
+        }
+      ]

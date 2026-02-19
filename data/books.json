@@ -1,28 +1,28 @@
 [
-  {
-    "id": 1,
-    "slug": "book-1",
-    "title": "Первая книга",
-    "genre": "Научная фантастика",
-    "shortDescription": "Захватывающий рассказ о путешествии",
-    "description": "Полное описание первой книги. Жанр: научная фантастика. Количество глав: 12. Объём: примерно 50 000 слов. История рассказывает о...",
-    "status": "completed",
-    "statusLabel": "Завершена",
-    "image": "images/books/book1.jpg",
-    "excerpt": "Это начало книги... Текст первого отрывка из произведения.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "authorTodayLink": "https://author.today"
-  },
-  {
-    "id": 2,
-    "slug": "book-2",
-    "title": "Вторая книга",
-    "genre": "Фэнтези",
-    "shortDescription": "Эпическая история магии и приключений",
-    "description": "Вторая книга — это фэнтезийный роман, повествующий о мире магии, драконов и древних артефактов.",
-    "status": "writing",
-    "statusLabel": "В работе",
-    "image": "images/books/book2.jpg",
-    "excerpt": "В древние времена, когда магия текла по жилам земли...",
-    "authorTodayLink": "https://author.today"
-  }
-]
+        {
+            "id": 1,
+            "slug": "book-1",
+            "title": "942",
+            "genre": "Стимпанк Фэнтези",
+            "shortDescription": "Мир страха и надежды в 942 году",
+            "description": "",
+            "status": "writing",
+            "statusLabel": "В работе",
+            "image": "images/books/book1.png",
+            "excerpt": "Это начало книги... Текст первого отрывка из произведения.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "authorTodayLink": "https://author.today/work/417897"
+        },
+        {
+            "id": 2,
+            "slug": "book-2",
+            "title": "Во тьме летают бабочки",
+            "genre": "Научная фантастика",
+            "shortDescription": "История о магии в России нулевых",
+            "description": "",
+            "status": "writing",
+            "statusLabel": "В работе",
+            "image": "images/books/book2.png",
+            "excerpt": "Это начало книги... Текст первого отрывка из произведения.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "authorTodayLink": "https://author.today/work/469872"
+        }
+    ]

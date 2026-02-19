@@ -1,26 +1,14 @@
 [
-  {
-    "id": 1,
-    "slug": "game-1",
-    "title": "Первая игра",
-    "shortDescription": "Экспериментальный проект на Godot",
-    "description": "Полное описание первой игры. Это экспериментальный проект, созданный на движке Godot. Включает основные механики и прототип игровой системы.",
-    "status": "development",
-    "statusLabel": "В разработке",
-    "image": "images/games/game1.jpg",
-    "technologies": ["Godot", "GDScript"],
-    "itchLink": "https://itch.io/games"
-  },
-  {
-    "id": 2,
-    "slug": "game-2",
-    "title": "Вторая игра",
-    "shortDescription": "Небольшой прототип",
-    "description": "Вторая игра — это небольшой игровой прототип, разработанный для изучения различных аспектов геймдизайна.",
-    "status": "release",
-    "statusLabel": "Релиз",
-    "image": "images/games/game2.jpg",
-    "technologies": ["Unity", "C#"],
-    "itchLink": "https://itch.io/games"
-  }
-]
+        {
+            "id": 1,
+            "slug": "game-1",
+            "title": "DanGolitsino",
+            "shortDescription": "Экспериментальный проект на Godot",
+            "description": "Полное описание первой игры",
+            "status": "development",
+            "statusLabel": "В разработке",
+            "image": "images/games/game1.jpg",
+            "technologies": ["Godot", "GDScript"],
+            "itchLink": ""
+        }
+    ]
