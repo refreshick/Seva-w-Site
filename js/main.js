@@ -1,7 +1,3 @@
-// ===========================
-// LOCAL FALLBACK DATA
-// ===========================
-
 const LOCAL_DATA = {
     header: `
 <header class="header">
@@ -358,10 +354,9 @@ function initAnimations() {
 async function loadProjects(containerId, jsonFile, cardTemplate) {
     const container = document.getElementById(containerId);
     if (!container) return;
-
     // if running from file://, use embedded data
+    const key = jsonFile.replace('.json','');
     if (window.location.protocol === 'file:') {
-        const key = jsonFile.replace('.json','');
         const projects = LOCAL_DATA[key] || [];
         if (projects.length === 0) {
             container.innerHTML = '<p style="color: var(--text-secondary); padding: 40px; text-align: center;">Нет данных</p>';
@@ -385,6 +380,9 @@ async function loadProjects(containerId, jsonFile, cardTemplate) {
         const response = await fetch(filePath);
         if (response.ok) {
             projects = await response.json();
+            // Save loaded projects into LOCAL_DATA so other pages (e.g. detail pages)
+            // can use the data when running on a hosted environment.
+            try { LOCAL_DATA[key] = projects; } catch (e) { /* ignore */ }
         } else {
             throw new Error(`Fetch status ${response.status}`);
         }
@@ -396,6 +394,7 @@ async function loadProjects(containerId, jsonFile, cardTemplate) {
             xhr.send();
             if (xhr.status === 0 || xhr.status === 200) {
                 projects = JSON.parse(xhr.responseText);
+                try { LOCAL_DATA[key] = projects; } catch (e) { /* ignore */ }
             } else {
                 throw new Error(`XHR status ${xhr.status}`);
             }
@@ -497,7 +496,7 @@ function musicCardTemplate(album, index) {
 // LOAD RELEASE DETAIL PAGE
 // ===========================
 
-function loadReleaseDetail() {
+async function loadReleaseDetail() {
     // Get album slug from URL query string
     const urlParams = new URLSearchParams(window.location.search);
     const albumSlug = urlParams.get('album');
@@ -508,8 +507,22 @@ function loadReleaseDetail() {
     }
     
     // Find release in LOCAL_DATA
-    const release = LOCAL_DATA.music.find(r => r.slug === albumSlug);
-    
+    let release = (LOCAL_DATA.music || []).find(r => r.slug === albumSlug);
+    // If not present in LOCAL_DATA (hosted environment), try to fetch data/music.json as a fallback
+    if (!release) {
+        try {
+            const filePath = new URL('./data/music.json', window.location.href).href;
+            const resp = await fetch(filePath);
+            if (resp.ok) {
+                const musicData = await resp.json();
+                try { LOCAL_DATA.music = musicData; } catch (e) { /* ignore */ }
+                release = musicData.find(r => r.slug === albumSlug);
+            }
+        } catch (e) {
+            console.error('Error fetching music data fallback:', e);
+        }
+    }
+
     if (!release) {
         document.querySelector('.release-detail').innerHTML = '<div class="container"><p style="color: var(--text-secondary); padding: 40px; text-align: center;">Альбом не найден</p></div>';
         return;
