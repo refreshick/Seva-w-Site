@@ -1,28 +1,30 @@
 [
-        {
-            "id": 1,
-            "slug": "book-1",
-            "title": "942",
-            "genre": "Стимпанк Фэнтези",
-            "shortDescription": "Мир страха и надежды в 942 году",
-            "description": "",
-            "status": "writing",
-            "statusLabel": "В работе",
-            "image": "images/books/book1.png",
-            "excerpt": "Это начало книги... Текст первого отрывка из произведения.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "authorTodayLink": "https://author.today/work/417897"
-        },
-        {
-            "id": 2,
-            "slug": "book-2",
-            "title": "Во тьме летают бабочки",
-            "genre": "Научная фантастика",
-            "shortDescription": "История о магии в России нулевых",
-            "description": "",
-            "status": "writing",
-            "statusLabel": "В работе",
-            "image": "images/books/book2.png",
-            "excerpt": "Это начало книги... Текст первого отрывка из произведения.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "authorTodayLink": "https://author.today/work/469872"
-        }
-    ]
+    {
+        "id": 1,
+        "slug": "book-1",
+        "title": "942",
+        "year": 2025,
+        "genre": "Стимпанк Фэнтези",
+        "shortDescription": "Мир страха и надежды в 942 году",
+        "description": "",
+        "status": "writing",
+        "statusLabel": "В работе",
+        "image": "images/books/book1.png",
+        "excerpt": "Это начало книги... Текст первого отрывка из произведения.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "authorTodayLink": "https://author.today/work/417897"
+    },
+    {
+        "id": 2,
+        "slug": "book-2",
+        "title": "Во тьме летают бабочки",
+        "year": 2026,
+        "genre": "Научная фантастика",
+        "shortDescription": "История о магии в России нулевых",
+        "description": "",
+        "status": "writing",
+        "statusLabel": "В работе",
+        "image": "images/books/book2.png",
+        "excerpt": "Это начало книги... Текст первого отрывка из произведения.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "authorTodayLink": "https://author.today/work/469872"
+    }
+]

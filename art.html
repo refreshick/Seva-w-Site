@@ -40,32 +40,32 @@
             <div class="container">
                 <div class="gallery-grid">
                     <!-- Art Pieces -->
-                    <div class="gallery-item fade-in" onclick="openLightbox(1)">
+                    <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="Открыть Арт 1" data-title="Арт 1">
                         <div class="gallery-image">
                             <span>Арт 1</span>
                         </div>
                     </div>
-                    <div class="gallery-item fade-in" onclick="openLightbox(2)">
+                    <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="Открыть Арт 2" data-title="Арт 2">
                         <div class="gallery-image">
                             <span>Арт 2</span>
                         </div>
                     </div>
-                    <div class="gallery-item fade-in" onclick="openLightbox(3)">
+                    <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="Открыть Арт 3" data-title="Арт 3">
                         <div class="gallery-image">
                             <span>Арт 3</span>
                         </div>
                     </div>
-                    <div class="gallery-item fade-in" onclick="openLightbox(4)">
+                    <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="Открыть Арт 4" data-title="Арт 4">
                         <div class="gallery-image">
                             <span>Арт 4</span>
                         </div>
                     </div>
-                    <div class="gallery-item fade-in" onclick="openLightbox(5)">
+                    <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="Открыть Арт 5" data-title="Арт 5">
                         <div class="gallery-image">
                             <span>Арт 5</span>
                         </div>
                     </div>
-                    <div class="gallery-item fade-in" onclick="openLightbox(6)">
+                    <div class="gallery-item fade-in" tabindex="0" role="button" aria-label="Открыть Арт 6" data-title="Арт 6">
                         <div class="gallery-image">
                             <span>Арт 6</span>
                         </div>
@@ -79,7 +79,7 @@
     <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
         <div class="lightbox-content" onclick="event.stopPropagation()">
             <!-- Previous Button -->
-            <button class="lightbox-btn prev-btn" onclick="previousImage()" aria-label="Предыдущее изображение">←</button>
+            <button type="button" class="lightbox-btn prev-btn" onclick="previousImage()" aria-label="Предыдущее изображение">←</button>
             
             <!-- Image -->
             <div class="lightbox-image">
@@ -87,10 +87,10 @@
             </div>
             
             <!-- Next Button -->
-            <button class="lightbox-btn next-btn" onclick="nextImage()" aria-label="Следующее изображение">→</button>
+            <button type="button" class="lightbox-btn next-btn" onclick="nextImage()" aria-label="Следующее изображение">→</button>
             
             <!-- Close Button -->
-            <button class="lightbox-close" onclick="closeLightbox()" aria-label="Закрыть">&times;</button>
+            <button type="button" class="lightbox-close" onclick="closeLightbox()" aria-label="Закрыть">&times;</button>
         </div>
     </div>
 

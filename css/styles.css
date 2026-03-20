@@ -400,6 +400,14 @@ main {
     margin-bottom: 1rem;
 }
 
+.card-eyebrow {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
 .card-footer {
     display: flex;
     justify-content: space-between;
@@ -450,6 +458,11 @@ main {
     transform: translateX(4px);
 }
 
+.card-link.disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
 /* ==========================================
    GALLERY
    ========================================== */
@@ -475,6 +488,11 @@ main {
 .gallery-item:hover {
     border-color: rgba(178, 62, 255, 0.3);
     box-shadow: 0 0 20px rgba(178, 62, 255, 0.2);
+}
+
+.gallery-item:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
 }
 
 .gallery-image {
@@ -662,6 +680,21 @@ main {
     padding: 40px;
     text-align: center;
     color: var(--text-secondary);
+}
+
+.empty-state {
+    color: var(--text-secondary);
+    text-align: center;
+    padding: 40px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.empty-state.compact {
+    padding: 16px 20px;
+    text-align: left;
+    background: transparent;
 }
 
 /* ==========================================
